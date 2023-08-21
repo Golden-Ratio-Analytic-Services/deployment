@@ -1,0 +1,5 @@
+airflow/
+config/
+dags/
+logs/
+plugins/

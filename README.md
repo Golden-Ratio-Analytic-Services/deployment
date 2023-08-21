@@ -7,6 +7,7 @@ Repository for running the Mexico Map project stack.
 To start the stack,
 
 ```bash
+sh fetch-repositories.sh
 make start
 ```
 

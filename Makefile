@@ -1,4 +1,4 @@
-BUILD_FILES := docker-compose.yml -f airflow/docker-compose.yml
+BUILD_FILES := airflow/docker-compose.yml -f docker-compose.yml
 
 up: # Bring the stack up
 	docker-compose -f ${BUILD_FILES} up -d $(c)

@@ -12,6 +12,8 @@ sh fetch-repositories.sh
 
 Then, set the volume `- ~/deployment/airflow/data/:/var/lib/neo4j/import` to the correct path on the host machine. This should be mounting the `data/` folder from airflow.
 
+Next, read through the airflow README file for any steps to take before running.
+
 Finally, start the stack with
 
 ```

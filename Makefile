@@ -5,4 +5,3 @@ up: # Bring the stack up
 
 down: # Bring the stack down and remove artifacts
 	docker-compose -f ${BUILD_FILES} down -v $(c)
-	rm -r logs config dags plugins

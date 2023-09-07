@@ -3,3 +3,4 @@ config/
 dags/
 logs/
 plugins/
+**.DS_STORE

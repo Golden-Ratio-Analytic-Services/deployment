@@ -4,11 +4,20 @@ Repository for running the Mexico Map project stack.
 
 ## Deploying
 
-To start the stack,
+To start the stack, first fetch the related projects
 
 ```bash
 sh fetch-repositories.sh
-make start
+```
+
+Then, set the volume `- ~/deployment/airflow/data/:/var/lib/neo4j/import` to the correct path on the host machine. This should be mounting the `data/` folder from airflow.
+
+Next, read through the airflow README file for any steps to take before running.
+
+Finally, start the stack with
+
+```
+make up
 ```
 
 To tear it down,

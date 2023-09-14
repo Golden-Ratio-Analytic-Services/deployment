@@ -1,6 +1,6 @@
 services:
   neo4j:
-    image: n4j
+    image: neo4j
     container_name: neo4j
     ports:
       - "7474:7474"

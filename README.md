@@ -14,7 +14,7 @@ Then, set the volume `- ~/deployment/airflow/data/:/var/lib/neo4j/import` to the
 
 Next, read through the airflow README file for any steps to take before running.
 
-Build the neo4j image by running `docker compose -t neo4j .` in the `neo4j` folder.
+Build the neo4j image by running `docker compose -t neo4j-mexico .` in the `neo4j` folder.
 
 Finally, start the stack with
 
@@ -22,10 +22,22 @@ Finally, start the stack with
 make up
 ```
 
+If running without Airflow, use
+
+```commandline
+make min
+```
+
 To tear it down,
 
 ```bash
 make down
+```
+
+To tear down the minimum deployment,
+
+```commandline
+make min-down
 ```
 
 ## Services
